@@ -1,0 +1,156 @@
+/* font-family: 'Finger Paint', cursive;
+font-family: 'Anonymous Pro', monospace;
+font-family: 'Dosis', sans-serif;
+5cdb95 */
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: #05386b;
+}
+
+.header {
+    font-family: 'Anonymous Pro', monospace;
+    text-align: center;
+    color: white;
+    background: #5cdb95;
+    margin: 0;
+    padding: 20px;
+    letter-spacing: 18px;
+}
+
+.header:hover {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(90deg, tomato, cyan, silver, red);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+    0% {
+        background-position: -100%;
+    }
+
+    100% {
+        background-position: 500%;
+    }
+}
+
+.container {
+    max-width: 65%;
+    display: block;
+    margin: 0 auto;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border: solid 2px #5cdb95;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    font-size: larger;
+}
+
+#nav-name {
+    font-family: 'Finger Paint', cursive;
+    font-size: larger;
+}
+
+.nav-item, .nav-btn {
+    font-family: 'Dosis', sans-serif;
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav-btn {
+    display: none !important;
+}
+
+.nav-item span {
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.4s;
+}
+
+.nav-item span:hover {
+    color:silver;
+    border-bottom:solid 1px;
+    transition: 0.2s;
+}
+
+img {
+    width: 97%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.title{
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.member-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    margin:10px;
+    border: solid 2px #5cdb95;
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+}
+
+.card-name{
+    margin: 0;
+    border-bottom: solid 1.5px silver;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    transition: 0.4s;
+}
+
+a:hover{
+    color:silver;
+    font-size: larger;
+    transition: 0.2s;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+    }
+
+    #navbar {
+        justify-content: space-between;
+    }
+
+    #nav-name {
+        text-align: center;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .nav-btn {
+        display: block !important;
+    }
+}

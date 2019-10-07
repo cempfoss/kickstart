@@ -7,6 +7,7 @@ body {
     margin: 0;
     height: 100%;
     background-color: #05386b;
+    font-family: 'Dosis', sans-serif;
 }
 
 .header {
@@ -80,8 +81,8 @@ body {
 }
 
 .nav-item span:hover {
-    color:silver;
-    border-bottom:solid 1px;
+    color: silver;
+    border-bottom: solid 1px;
     transition: 0.2s;
 }
 
@@ -92,46 +93,58 @@ img {
     height: auto;
     background-repeat: no-repeat;
     background-size: contain;
+    border-radius: 5px;
+    transition: 0.4s;
 }
 
-.title{
+img:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.title {
     font-family: 'Dosis', sans-serif;
     color: white;
     text-align: center;
 }
 
-.member-list{
+.member-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.card{
-    margin:10px;
+.card {
+    margin: 10px;
     border: solid 2px #5cdb95;
+    text-align: center;
     border-radius: 5px;
     padding: 20px;
     color: white;
+    max-width: 50%;
+    min-height: 70px;
+    min-width: 200px;
+    transition: 0.4s;
 }
 
-.card-name{
+.card:hover {
+    color: silver;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.card-name {
     margin: 0;
     border-bottom: solid 1.5px silver;
     width: 100%;
     margin-bottom: 10px;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
     transition: 0.4s;
 }
-
-a:hover{
-    color:silver;
-    font-size: larger;
-    transition: 0.2s;
-}
-
 
 @media only screen and (max-width: 600px) {
     .container {
@@ -152,5 +165,21 @@ a:hover{
 
     .nav-btn {
         display: block !important;
+    }
+
+    .member-list {
+        display: block;
+    }
+
+    .card {
+        max-width: 100%;
+        min-height: 65px;
+        min-width: 200px;
+    }
+
+    .card:hover {
+        color: silver;
+        transform: scale(0.9);
+        transition: 0.2s;
     }
 }

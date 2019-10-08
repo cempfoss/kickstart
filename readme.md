@@ -80,3 +80,6 @@ Here, since you've cloned the repo there is no need of defining the remote origi
     * Replace **john** with your Name
 
 * ```git push```
+
+    * Enter your github username and password when asked.
+    * Remember command line doesn't show anything when you type a password. Not even asterisk or dots.

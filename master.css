@@ -8,12 +8,13 @@ body {
     height: 100%;
     background-color: #05386b;
     font-family: 'Dosis', sans-serif;
+    transition: 0.4s;
+    color: white !important;
 }
 
 .header {
     font-family: 'Anonymous Pro', monospace;
     text-align: center;
-    color: white;
     background: #5cdb95;
     margin: 0;
     padding: 20px;
@@ -50,7 +51,6 @@ body {
 #navbar {
     display: flex;
     justify-content: space-between;
-    color: white;
     border: solid 2px #5cdb95;
     border-radius: 5px;
     margin: 20px;
@@ -68,6 +68,7 @@ body {
     padding: 5px;
     margin-left: 20px;
     margin-right: 20px;
+    transition: 0.4s;
 }
 
 .nav-btn {
@@ -104,7 +105,6 @@ img:hover {
 
 .title {
     font-family: 'Dosis', sans-serif;
-    color: white;
     text-align: center;
 }
 
@@ -120,7 +120,6 @@ img:hover {
     text-align: center;
     border-radius: 5px;
     padding: 20px;
-    color: white;
     max-width: 50%;
     min-height: 70px;
     min-width: 200px;
@@ -152,7 +151,7 @@ a {
     }
 
     #navbar {
-        justify-content: space-between;
+        display: block;
     }
 
     #nav-name {
@@ -181,5 +180,43 @@ a {
         color: silver;
         transform: scale(0.9);
         transition: 0.2s;
+    }
+
+    .fa-bars{
+        transition: 0.4s;
+    }
+
+    .nav-item{
+        display: none;
+        transition: 0.4s;
+    }
+
+    .nav-item-toggle{
+        display: block;
+        transition: 0.4s;
+    }
+
+    .rotate90{
+        transition: 0.2s;
+        transform : rotate(360deg);
+    }
+
+    .rotate0{
+        transition: 0.2s;
+        transform : rotate(0deg);
+    }
+
+    .menu-item{
+        display: block !important;
+        min-width: 100% !important;
+        transition: 0.4s;
+        text-align: center;
+        border-bottom: solid 1px silver;
+        margin-top: 20px;
+    }
+
+    #nav-header{
+        display: flex;
+        justify-content: space-between;
     }
 }

@@ -23,11 +23,13 @@
 
         <!-- nav bar start-->
         <div id="navbar">
-            <span id="nav-name">Kickstart</span>
-            <i class="fa fa-bars nav-btn"></i>
-            <div class="nav-item">
-                <span>Member List</span>
-                <span>Instructions</span>
+            <div id="nav-header">
+                <span id="nav-name">Kickstart</span>
+                <span onclick="toggle()"  id="menu"><i class="fa fa-bars nav-btn"></i></span>
+            </div>
+            <div class="nav-item" id="togglemenu">
+                <span class="menu-item">Member List</span>
+                <span class="menu-item">Instructions</span>
             </div>
         </div>
         <!-- nav bar ends -->
@@ -82,6 +84,9 @@
         <!-- member details ends -->
 
     </div>
+
+    <!-- External Scripts -->
+    <script src="./master.js" charset="utf-8"></script>
 
 </body>
 
